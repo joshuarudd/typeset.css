@@ -1,3 +1,12 @@
+/* 
+ugc-css
+https://github.com/joshuarudd/ugc-css
+v0.5
+Last Updated: 2012-02-10
+Author: Joshua Rudd - http://joshuarudd.com 
+Twitter: @joshuarudd
+*/
+
 .ugc html, .ugc body, .ugc div, .ugc span, .ugc applet, .ugc object, .ugc iframe,
 .ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6, .ugc p, .ugc blockquote, .ugc pre,
 .ugc a, .ugc abbr, .ugc acronym, .ugc address, .ugc big, .ugc cite, .ugc code,
@@ -20,13 +29,13 @@
 }
 
 .ugc {
-/*  color: #5C5F66;*/
-/*  font-size: inherit;*/
   line-height: 1em;
 }
 
-.ugc > *:first-child {
-  margin-top: 0 !important;
+.ugc * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .ugc a {
@@ -52,25 +61,20 @@
 .ugc pre {
   background-color: #F3F6FA;
   border: 1px solid #DBE2F2;
-  border-left-width: 1ex;
+/*  border-left-width: 1ex;*/
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   color: #324354;
   font-family: monospace;
-  font-size: 11px;
-  line-height: 1.2em;
+  font-size: 12px;
+  line-height: 1.4em;
   margin: 1em 0;
-  padding: 1ex 1ex;
+  max-width: 100%;
+  overflow: scroll;
+  padding: 1em;
   white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
   white-space: pre-wrap; /* css-3 */
-}
-
-.ugc blockquote {
-  background-color: #F3F6FA;
-  border-top: 1px solid #CED6E6;
-  margin: 1em;
-  padding: 1em 1em .3em 1em;
 }
 
 .ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6 {
@@ -84,16 +88,17 @@
   font-size: 160%;
 }
 .ugc h3 {
-  font-size: 130%;
+  font-size: 120%;
 }
 .ugc h4 {
-  font-size: 110%;
-}
-.ugc h5 {
   font-size: 100%;
 }
+.ugc h5 {
+  font-size: 80%;
+}
 .ugc h6 {
-  font-size: 90%;
+  font-size: 80%;
+  font-weight: normal;
 }
 
 .ugc img {
@@ -107,21 +112,31 @@
   margin-bottom: .7em;
 }
 
+.ugc blockquote {
+/*  background-color: #F3F6FA;*/
+/*  border-top: 1px solid #CED6E6;*/
+/*  margin: 1em;*/
+  margin-left: 1em;
+/*  padding: 1em 1em .3em 1em;*/
+}
+
+
+.ugc dl {
+  line-height: 1em;
+  margin: 1em 0 1em 0;
+}
+
 .ugc li, .ugc dt, .ugc dd, .ugc td {
   line-height: 1.4em;
 }
 
 .ugc dt {
+  font-size: 110%;
   font-weight: bold;
 }
 
-.ugc td {
-  padding: 0 2px 2px 2px;
-}
-
 .ugc ol,
-.ugc ul,
-.ugc dl {
+.ugc ul {
   line-height: 1em;
   margin: 1em 0 1em 2em;
 }
@@ -150,7 +165,11 @@
   margin: 1em 0;
 }
 
-.ugc-embed iframe, .ugc-embed img, .ugc-embed object, .ugc-embed embed {
+.ugc-embed img {
+  max-width: 100%;
+}
+
+.ugc-embed iframe, .ugc-embed object, .ugc-embed embed {
   display: block;
   max-width: 100%;
   margin-bottom: 1em;
@@ -158,4 +177,12 @@
 
 .ugc-embed figcaption {
   
+}
+
+.ugc td {
+  padding: 0 2px 2px 2px;
+}
+
+.ugc > *:first-child {
+  margin-top: 0;
 }
