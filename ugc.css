@@ -51,6 +51,68 @@ Twitter: @joshuarudd
   text-decoration: none;
 }
 
+.ugc abbr[title] {
+  border-bottom: 1px dotted gray;
+}
+
+.ugc address {
+  /* no style */
+}
+
+.ugc cite {
+  font-style: italic;
+}
+
+.ugc dfn {
+  /* no style */
+}
+
+.ugc del {
+  color: red;
+  text-decoration: line-through;
+}
+
+.ugc ins {
+  color: green;
+  text-decoration: none;
+}
+
+.ugc kbd {
+  font-family: monospace;
+}
+
+.ugc mark {
+  background-color: yellow;
+  color: black;
+}
+
+.ugc samp {
+  font-family: monospace;
+}
+
+.ugc small {
+  color: gray;
+  font-size: 80%;
+}
+
+.ugc s {
+  text-decoration: line-through;
+}
+
+.ugc sub {
+  font-size: 80%;
+  vertical-align: sub;
+}
+
+.ugc sup {
+  font-size: 80%;
+  vertical-align: super;
+}
+
+.ugc var {
+  font-style: italic;
+}
+
 .ugc code {
   background-color: #F3F6FA;
   color: #324354;
@@ -61,7 +123,6 @@ Twitter: @joshuarudd
 .ugc pre {
   background-color: #F3F6FA;
   border: 1px solid #DBE2F2;
-/*  border-left-width: 1ex;*/
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
