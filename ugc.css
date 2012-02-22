@@ -1,10 +1,14 @@
 /* 
-ugc-styles
-https://github.com/joshuarudd/ugc-styles
-v0.7.1
-Last Updated: 2012-02-22
-Author: Joshua Rudd - http://joshuarudd.com 
-Twitter: @joshuarudd
+  ugc-styles
+  https://github.com/joshuarudd/ugc-styles
+  v0.7.2
+  Last Updated: 2012-02-22
+  Author: Joshua Rudd - http://joshuarudd.com 
+  Twitter: @joshuarudd
+*/
+
+/*
+  Reset element styles
 */
 
 .ugc html, .ugc body, .ugc div, .ugc span, .ugc applet, .ugc object, .ugc iframe,
@@ -37,6 +41,10 @@ Twitter: @joshuarudd
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/*
+  Inline elements
+*/
 
 .ugc a {
   text-decoration: underline;
@@ -121,7 +129,58 @@ Twitter: @joshuarudd
 }
 
 /*
-Block-level elements
+  Lists
+*/
+
+.ugc ol, .ugc ul {
+  line-height: 1em;
+  margin: 1em 0 1em 2em;
+}
+
+  .ugc ol ol, .ugc ul ul, .ugc ol ul, .ugc ul ol {
+    margin: 0 0 0 2em;
+  }
+
+.ugc ol {
+  list-style: decimal;
+}
+
+  .ugc ol ol {
+    list-style: lower-alpha;
+  }
+  
+    .ugc ol ol ol {
+      list-style: lower-roman;
+    }
+    
+      .ugc ol ol ol ol {
+        list-style: decimal;
+      }
+
+.ugc ul {
+  list-style: square;
+}
+
+.ugc li {
+  line-height: 1.3em;
+}
+
+.ugc dl {
+  margin: 1em 0;
+}
+
+.ugc dt {
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
+.ugc dd {
+  line-height: 1.3em;
+  margin-bottom: .7em;
+}
+
+/*
+  Block-level elements
 */
 
 .ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6 {
@@ -178,80 +237,7 @@ Block-level elements
 }
 
 /*
-Lists
-*/
-
-.ugc ol, .ugc ul {
-  line-height: 1em;
-  margin: 1em 0 1em 2em;
-}
-
-  .ugc ol ol, .ugc ul ul, .ugc ol ul, .ugc ul ol {
-    margin: 0 0 0 2em;
-  }
-
-.ugc ol {
-  list-style: decimal;
-}
-
-  .ugc ol ol {
-    list-style: lower-alpha;
-  }
-  
-    .ugc ol ol ol {
-      list-style: lower-roman;
-    }
-    
-      .ugc ol ol ol ol {
-        list-style: decimal;
-      }
-
-.ugc ul {
-  list-style: square;
-}
-
-.ugc li {
-  line-height: 1.3em;
-}
-
-.ugc dl {
-  margin: 1em 0;
-}
-
-.ugc dt {
-  line-height: 1.3em;
-  font-weight: bold;
-}
-
-.ugc dd {
-  line-height: 1.3em;
-  margin-bottom: .7em;
-}
-
-/*
-Media & Embeds
-*/
-
-.ugc iframe, .ugc object, .ugc embed, .ugc figure {
-  display: block;
-  max-width: 100%;
-  margin: 1em 0;
-}
-
-.ugc figcaption {
-  font-size: 80%;
-  line-height: 1.3em;
-  margin: .7em 0;
-  text-align: left;
-}
-
-.ugc img {
-  display: inline;
-  max-width: 100%;
-}
-
-/*
-Tables
+  Tables
 */
 
 .ugc table {
@@ -300,7 +286,29 @@ Tables
 }
 
 /*
-Cleanup
+  Media
+*/
+
+.ugc img {
+  display: inline;
+  max-width: 100%;
+}
+
+.ugc embed, .ugc figure, .ugc iframe, .ugc object {
+  display: block;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+.ugc figcaption {
+  font-size: 80%;
+  line-height: 1.3em;
+  margin: .7em 0;
+  text-align: left;
+}
+
+/*
+  Cleanup
 */
 
 .ugc > *:first-child {
