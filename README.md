@@ -1,1 +1,1 @@
-**ugc-css** is a baseline set of styles for user-generated content.
+**ugc-styles** is a baseline set of styles for user-generated content.
