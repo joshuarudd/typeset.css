@@ -1,7 +1,7 @@
 /* 
 ugc-css
 https://github.com/joshuarudd/ugc-css
-v0.6
+v0.7
 Last Updated: 2012-02-21
 Author: Joshua Rudd - http://joshuarudd.com 
 Twitter: @joshuarudd
@@ -120,27 +120,14 @@ Twitter: @joshuarudd
   padding: .1em .2em;
 }
 
-.ugc pre {
-  background-color: #F3F6FA;
-  border: 1px solid #DBE2F2;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  color: #324354;
-  font-family: monospace;
-  font-size: 12px;
-  line-height: 1.4em;
-  margin: 1em 0;
-  max-width: 100%;
-  overflow: scroll;
-  padding: 1em;
-  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
-  white-space: pre-wrap; /* css-3 */
-}
+/*
+Block-level elements
+*/
 
 .ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6 {
   font-weight: bold;
-  margin: 1.4em 0 .7em 0;
+  line-height: 1em;
+  margin: 1.3em 0 .7em 0;
 }
 .ugc h1 {
   font-size: 200%;
@@ -162,87 +149,159 @@ Twitter: @joshuarudd
   font-weight: normal;
 }
 
-.ugc img {
-  display: block;
-  max-width: 100%;
-  margin: 1em 0;
-}
-
 .ugc p {
-  line-height: 1.4em;
-  margin-bottom: .7em;
+  line-height: 1.3em;
+  margin: .7em 0;
 }
 
 .ugc blockquote {
-/*  background-color: #F3F6FA;*/
-/*  border-top: 1px solid #CED6E6;*/
-/*  margin: 1em;*/
-  margin-left: 1em;
-/*  padding: 1em 1em .3em 1em;*/
+  margin-left: 2em;
 }
 
-
-.ugc dl {
-  line-height: 1em;
-  margin: 1em 0 1em 0;
+.ugc pre {
+  background-color: #F3F6FA;
+  border: 1px solid #DBE2F2;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #324354;
+  display: block;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.3em;
+  margin: 1em 0;
+  max-width: 100%;
+  overflow: scroll;
+  padding: 2ex;
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: pre-wrap; /* css-3 */
 }
 
-.ugc li, .ugc dt, .ugc dd, .ugc td {
-  line-height: 1.4em;
-}
+/*
+Lists
+*/
 
-.ugc dt {
-  font-size: 110%;
-  font-weight: bold;
-}
-
-.ugc ol,
-.ugc ul {
+.ugc ol, .ugc ul {
   line-height: 1em;
   margin: 1em 0 1em 2em;
 }
+
+  .ugc ol ol, .ugc ul ul, .ugc ol ul, .ugc ul ol {
+    margin: 0 0 0 2em;
+  }
+
 .ugc ol {
   list-style: decimal;
 }
+
+  .ugc ol ol {
+    list-style: lower-alpha;
+  }
+  
+    .ugc ol ol ol {
+      list-style: lower-roman;
+    }
+    
+      .ugc ol ol ol ol {
+        list-style: decimal;
+      }
+
 .ugc ul {
   list-style: square;
 }
-.ugc ol ol {
-  list-style: lower-alpha;
-}
-.ugc ol ol ol {
-  list-style: lower-roman;
-}
-.ugc ol ol ol ol {
-  list-style: decimal;
-}
 
 .ugc li {
-  margin-bottom: .3em;
+  line-height: 1.3em;
 }
 
-.ugc-embed {
+.ugc dl {
+  margin: 1em 0;
+}
+
+.ugc dt {
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
+.ugc dd {
+  line-height: 1.3em;
+  margin-bottom: .7em;
+}
+
+/*
+Media & Embeds
+*/
+
+.ugc iframe, .ugc object, .ugc embed, .ugc figure {
+  display: block;
   max-width: 100%;
   margin: 1em 0;
 }
 
-.ugc-embed img {
+.ugc figcaption {
+  font-size: 80%;
+  line-height: 1.3em;
+  margin: .7em 0;
+  text-align: left;
+}
+
+.ugc img {
+  display: inline;
   max-width: 100%;
 }
 
-.ugc-embed iframe, .ugc-embed object, .ugc-embed embed {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 1em;
+/*
+Tables
+*/
+
+.ugc table {
+  border: 1px solid #DBE2F2;
+  border-collapse: collapse;
+  margin: 1em 0;
+  table-layout: auto;
 }
 
-.ugc-embed figcaption {
-  
+.ugc caption {
+  caption-side: top;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: .7em;
+  text-align: left;
+}
+
+.ugc thead {
+  /* no style */
+}
+
+.ugc tbody {
+  /* no style */
+}
+
+.ugc tfoot {
+  /* no style */
+}
+
+.ugc th, .ugc td {
+  border: 1px solid #DBE2F2;
+  color: #324354;
+  font-size: 90%;
+  line-height: 1.3em;
+  padding: 1ex;
+  text-align: left;
+}
+
+.ugc th {
+  background-color: #F3F6FA;
+  font-weight: normal;
 }
 
 .ugc td {
-  padding: 0 2px 2px 2px;
+  /* no style */
 }
+
+/*
+Cleanup
+*/
 
 .ugc > *:first-child {
   margin-top: 0;
