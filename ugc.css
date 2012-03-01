@@ -1,8 +1,8 @@
 /* 
   ugc-styles
   https://github.com/joshuarudd/ugc-styles
-  v0.7.2
-  Last Updated: 2012-02-22
+  v0.7.3
+  Last Updated: 2012-03-01
   Author: Joshua Rudd - http://joshuarudd.com 
   Twitter: @joshuarudd
 */
@@ -289,12 +289,12 @@
   Media
 */
 
-.ugc img {
+.ugc embed, .ugc iframe, .ugc img, .ugc object {
   display: inline;
   max-width: 100%;
 }
 
-.ugc embed, .ugc figure, .ugc iframe, .ugc object {
+.ugc figure {
   display: block;
   max-width: 100%;
   margin: 1em 0;
