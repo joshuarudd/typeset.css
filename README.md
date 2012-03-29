@@ -12,7 +12,15 @@ This is *not* a CSS framework for styling the layout and design of your website 
 
 ### When to use this
 
-Any time you have stripped a browser’s default styles or haven’t specified styles for content elements, use UGC Styles. It’s great for blog posts, comments and other user-generated content because it ensures that the content will be rendered properly. (How many times have we reset CSS and forgotten to include styles for code snippets, ordered lists, etc.?)
+Any time you have stripped a browser’s default styles or haven’t specified styles for content elements, use UGC Styles. It’s great for:
+
+* Blog posts
+* Articles
+* Comments
+* Helper text in web apps
+* and any other content blocks on a page
+
+Never again add content to your web page just to find that you don’t have a consistent style for it&trade;.
 
 ### Why this was made
 
