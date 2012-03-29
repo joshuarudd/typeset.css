@@ -1,0 +1,316 @@
+/* 
+  ugc-styles
+  https://github.com/joshuarudd/ugc-styles
+  v0.7.3
+  Last Updated: 2012-03-01
+  Author: Joshua Rudd - http://joshuarudd.com 
+  Twitter: @joshuarudd
+*/
+
+/*
+  Reset element styles
+*/
+
+.ugc html, .ugc body, .ugc div, .ugc span, .ugc applet, .ugc object, .ugc iframe,
+.ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6, .ugc p, .ugc blockquote, .ugc pre,
+.ugc a, .ugc abbr, .ugc acronym, .ugc address, .ugc big, .ugc cite, .ugc code,
+.ugc del, .ugc dfn, .ugc em, .ugc img, .ugc ins, .ugc kbd, .ugc q, .ugc s, .ugc samp,
+.ugc small, .ugc strike, .ugc strong, .ugc sub, .ugc sup, .ugc tt, .ugc var,
+.ugc b, .ugc u, .ugc i, .ugc center,
+.ugc dl, .ugc dt, .ugc dd, .ugc ol, .ugc ul, .ugc li,
+.ugc fieldset, .ugc form, .ugc label, .ugc legend,
+.ugc table, .ugc caption, .ugc tbody, .ugc tfoot, .ugc thead, .ugc tr, .ugc th, .ugc td,
+.ugc article, .ugc aside, .ugc canvas, .ugc details, .ugc embed, 
+.ugc figure, .ugc figcaption, .ugc footer, .ugc header, .ugc hgroup, 
+.ugc menu, .ugc nav, .ugc output, .ugc ruby, .ugc section, .ugc summary,
+.ugc time, .ugc mark, .ugc audio, .ugc video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  line-height: 1em;
+  vertical-align: baseline;
+}
+
+.ugc {
+  line-height: 1em;
+}
+
+.ugc * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+  Inline elements
+*/
+
+.ugc a {
+  text-decoration: underline;
+}
+
+.ugc strong, .ugc b {
+  font-weight: bold;
+}
+
+.ugc u, .ugc em, .ugc i {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.ugc abbr[title] {
+  border-bottom: 1px dotted gray;
+}
+
+.ugc address {
+  /* no style */
+}
+
+.ugc cite {
+  font-style: italic;
+}
+
+.ugc dfn {
+  /* no style */
+}
+
+.ugc del {
+  color: red;
+  text-decoration: line-through;
+}
+
+.ugc ins {
+  color: green;
+  text-decoration: none;
+}
+
+.ugc kbd {
+  font-family: monospace;
+}
+
+.ugc mark {
+  background-color: yellow;
+  color: black;
+}
+
+.ugc samp {
+  font-family: monospace;
+}
+
+.ugc small {
+  color: gray;
+  font-size: 80%;
+}
+
+.ugc s {
+  text-decoration: line-through;
+}
+
+.ugc sub {
+  font-size: 80%;
+  vertical-align: sub;
+}
+
+.ugc sup {
+  font-size: 80%;
+  vertical-align: super;
+}
+
+.ugc var {
+  font-style: italic;
+}
+
+.ugc code {
+  background-color: #F3F6FA;
+  color: #324354;
+  font-family: monospace;
+  padding: .1em .2em;
+}
+
+/*
+  Lists
+*/
+
+.ugc ol, .ugc ul {
+  line-height: 1em;
+  margin: 1em 0 1em 2em;
+}
+
+  .ugc ol ol, .ugc ul ul, .ugc ol ul, .ugc ul ol {
+    margin: 0 0 0 2em;
+  }
+
+.ugc ol {
+  list-style: decimal;
+}
+
+  .ugc ol ol {
+    list-style: lower-alpha;
+  }
+  
+    .ugc ol ol ol {
+      list-style: lower-roman;
+    }
+    
+      .ugc ol ol ol ol {
+        list-style: decimal;
+      }
+
+.ugc ul {
+  list-style: square;
+}
+
+.ugc li {
+  line-height: 1.3em;
+}
+
+.ugc dl {
+  margin: 1em 0;
+}
+
+.ugc dt {
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
+.ugc dd {
+  line-height: 1.3em;
+  margin-bottom: .7em;
+}
+
+/*
+  Block-level elements
+*/
+
+.ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6 {
+  font-weight: bold;
+  line-height: 1em;
+  margin: 1.3em 0 .7em 0;
+}
+.ugc h1 {
+  font-size: 200%;
+}
+.ugc h2 {
+  font-size: 160%;
+}
+.ugc h3 {
+  font-size: 120%;
+}
+.ugc h4 {
+  font-size: 100%;
+}
+.ugc h5 {
+  font-size: 80%;
+}
+.ugc h6 {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.ugc p {
+  line-height: 1.3em;
+  margin: .7em 0;
+}
+
+.ugc blockquote {
+  margin-left: 2em;
+}
+
+.ugc pre {
+  background-color: #F3F6FA;
+  border: 1px solid #DBE2F2;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #324354;
+  display: block;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.3em;
+  margin: 1em 0;
+  max-width: 100%;
+  overflow: scroll;
+  padding: 2ex;
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: pre-wrap; /* css-3 */
+}
+
+/*
+  Tables
+*/
+
+.ugc table {
+  border: 1px solid #DBE2F2;
+  border-collapse: collapse;
+  margin: 1em 0;
+  table-layout: auto;
+}
+
+.ugc caption {
+  caption-side: top;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: .7em;
+  text-align: left;
+}
+
+.ugc thead {
+  /* no style */
+}
+
+.ugc tbody {
+  /* no style */
+}
+
+.ugc tfoot {
+  /* no style */
+}
+
+.ugc th, .ugc td {
+  border: 1px solid #DBE2F2;
+  color: #324354;
+  font-size: 90%;
+  line-height: 1.3em;
+  padding: 1ex;
+  text-align: left;
+}
+
+.ugc th {
+  background-color: #F3F6FA;
+  font-weight: normal;
+}
+
+.ugc td {
+  /* no style */
+}
+
+/*
+  Media
+*/
+
+.ugc embed, .ugc iframe, .ugc img, .ugc object {
+  display: inline;
+  max-width: 100%;
+}
+
+.ugc figure {
+  display: block;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+.ugc figcaption {
+  font-size: 80%;
+  line-height: 1.3em;
+  margin: .7em 0;
+  text-align: left;
+}
+
+/*
+  Cleanup
+*/
+
+.ugc > *:first-child {
+  margin-top: 0;
+}
