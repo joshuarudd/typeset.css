@@ -1,8 +1,8 @@
 /* 
-  ugc-styles
-  https://github.com/joshuarudd/ugc-styles
-  v0.7.3
-  Last Updated: 2012-03-01
+  Typeset.css
+  https://github.com/joshuarudd/typeset-css
+  v0.8
+  Last Updated: 2012-04-26
   Author: Joshua Rudd - http://joshuarudd.com 
   Twitter: @joshuarudd
 */
@@ -11,19 +11,19 @@
   Reset element styles
 */
 
-.ugc html, .ugc body, .ugc div, .ugc span, .ugc applet, .ugc object, .ugc iframe,
-.ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6, .ugc p, .ugc blockquote, .ugc pre,
-.ugc a, .ugc abbr, .ugc acronym, .ugc address, .ugc big, .ugc cite, .ugc code,
-.ugc del, .ugc dfn, .ugc em, .ugc img, .ugc ins, .ugc kbd, .ugc q, .ugc s, .ugc samp,
-.ugc small, .ugc strike, .ugc strong, .ugc sub, .ugc sup, .ugc tt, .ugc var,
-.ugc b, .ugc u, .ugc i, .ugc center,
-.ugc dl, .ugc dt, .ugc dd, .ugc ol, .ugc ul, .ugc li,
-.ugc fieldset, .ugc form, .ugc label, .ugc legend,
-.ugc table, .ugc caption, .ugc tbody, .ugc tfoot, .ugc thead, .ugc tr, .ugc th, .ugc td,
-.ugc article, .ugc aside, .ugc canvas, .ugc details, .ugc embed, 
-.ugc figure, .ugc figcaption, .ugc footer, .ugc header, .ugc hgroup, 
-.ugc menu, .ugc nav, .ugc output, .ugc ruby, .ugc section, .ugc summary,
-.ugc time, .ugc mark, .ugc audio, .ugc video {
+.typeset html, .typeset body, .typeset div, .typeset span, .typeset applet, .typeset object, .typeset iframe,
+.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset blockquote, .typeset pre,
+.typeset a, .typeset abbr, .typeset acronym, .typeset address, .typeset big, .typeset cite, .typeset code,
+.typeset del, .typeset dfn, .typeset em, .typeset img, .typeset ins, .typeset kbd, .typeset q, .typeset s, .typeset samp,
+.typeset small, .typeset strike, .typeset strong, .typeset sub, .typeset sup, .typeset tt, .typeset var,
+.typeset b, .typeset u, .typeset i, .typeset center,
+.typeset dl, .typeset dt, .typeset dd, .typeset ol, .typeset ul, .typeset li,
+.typeset fieldset, .typeset form, .typeset label, .typeset legend,
+.typeset table, .typeset caption, .typeset tbody, .typeset tfoot, .typeset thead, .typeset tr, .typeset th, .typeset td,
+.typeset article, .typeset aside, .typeset canvas, .typeset details, .typeset embed, 
+.typeset figure, .typeset figcaption, .typeset footer, .typeset header, .typeset hgroup, 
+.typeset menu, .typeset nav, .typeset output, .typeset ruby, .typeset section, .typeset summary,
+.typeset time, .typeset mark, .typeset audio, .typeset video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -32,11 +32,12 @@
   vertical-align: baseline;
 }
 
-.ugc {
+.typeset {
   line-height: 1em;
+  text-rendering: optimizeLegibility;
 }
 
-.ugc * {
+.typeset * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -46,82 +47,82 @@
   Inline elements
 */
 
-.ugc a {
+.typeset a {
   text-decoration: underline;
 }
 
-.ugc strong, .ugc b {
-  font-weight: bold;
+.typeset strong, .typeset b {
+  font-weight: bolder;
 }
 
-.ugc u, .ugc em, .ugc i {
+.typeset u, .typeset em, .typeset i {
   font-style: italic;
   text-decoration: none;
 }
 
-.ugc abbr[title] {
+.typeset abbr[title] {
   border-bottom: 1px dotted gray;
 }
 
-.ugc address {
+.typeset address {
   /* no style */
 }
 
-.ugc cite {
+.typeset cite {
   font-style: italic;
 }
 
-.ugc dfn {
+.typeset dfn {
   /* no style */
 }
 
-.ugc del {
+.typeset del {
   color: red;
   text-decoration: line-through;
 }
 
-.ugc ins {
+.typeset ins {
   color: green;
   text-decoration: none;
 }
 
-.ugc kbd {
+.typeset kbd {
   font-family: monospace;
 }
 
-.ugc mark {
+.typeset mark {
   background-color: yellow;
   color: black;
 }
 
-.ugc samp {
+.typeset samp {
   font-family: monospace;
 }
 
-.ugc small {
+.typeset small {
   color: gray;
   font-size: 80%;
 }
 
-.ugc s {
+.typeset s {
   text-decoration: line-through;
 }
 
-.ugc sub {
+.typeset sub {
   font-size: 80%;
   vertical-align: sub;
 }
 
-.ugc sup {
+.typeset sup {
   font-size: 80%;
   vertical-align: super;
 }
 
-.ugc var {
+.typeset var {
   font-style: italic;
 }
 
-.ugc code {
+.typeset code {
   background-color: #F3F6FA;
   color: #324354;
   font-family: monospace;
@@ -132,49 +133,49 @@
   Lists
 */
 
-.ugc ol, .ugc ul {
+.typeset ol, .typeset ul {
   line-height: 1em;
   margin: 1em 0 1em 2em;
 }
 
-  .ugc ol ol, .ugc ul ul, .ugc ol ul, .ugc ul ol {
+  .typeset ol ol, .typeset ul ul, .typeset ol ul, .typeset ul ol {
     margin: 0 0 0 2em;
   }
 
-.ugc ol {
+.typeset ol {
   list-style: decimal;
 }
 
-  .ugc ol ol {
+  .typeset ol ol {
     list-style: lower-alpha;
   }
   
-    .ugc ol ol ol {
+    .typeset ol ol ol {
       list-style: lower-roman;
     }
     
-      .ugc ol ol ol ol {
+      .typeset ol ol ol ol {
         list-style: decimal;
       }
 
-.ugc ul {
+.typeset ul {
   list-style: square;
 }
 
-.ugc li {
+.typeset li {
   line-height: 1.3em;
 }
 
-.ugc dl {
+.typeset dl {
   margin: 1em 0;
 }
 
-.ugc dt {
+.typeset dt {
   line-height: 1.3em;
   font-weight: bold;
 }
 
-.ugc dd {
+.typeset dd {
   line-height: 1.3em;
   margin-bottom: .7em;
 }
@@ -183,41 +184,41 @@
   Block-level elements
 */
 
-.ugc h1, .ugc h2, .ugc h3, .ugc h4, .ugc h5, .ugc h6 {
+.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-weight: bold;
   line-height: 1em;
   margin: 1.3em 0 .7em 0;
 }
-.ugc h1 {
+.typeset h1 {
   font-size: 200%;
 }
-.ugc h2 {
+.typeset h2 {
   font-size: 160%;
 }
-.ugc h3 {
+.typeset h3 {
   font-size: 120%;
 }
-.ugc h4 {
+.typeset h4 {
   font-size: 100%;
 }
-.ugc h5 {
+.typeset h5 {
   font-size: 80%;
 }
-.ugc h6 {
+.typeset h6 {
   font-size: 80%;
   font-weight: normal;
 }
 
-.ugc p {
+.typeset p {
   line-height: 1.3em;
   margin: .7em 0;
 }
 
-.ugc blockquote {
+.typeset blockquote {
   margin-left: 2em;
 }
 
-.ugc pre {
+.typeset pre {
   background-color: #F3F6FA;
   border: 1px solid #DBE2F2;
   -moz-border-radius: 2px;
@@ -240,14 +241,14 @@
   Tables
 */
 
-.ugc table {
+.typeset table {
   border: 1px solid #DBE2F2;
   border-collapse: collapse;
   margin: 1em 0;
   table-layout: auto;
 }
 
-.ugc caption {
+.typeset caption {
   caption-side: top;
   font-weight: bold;
   line-height: 1.3em;
@@ -255,19 +256,19 @@
   text-align: left;
 }
 
-.ugc thead {
+.typeset thead {
   /* no style */
 }
 
-.ugc tbody {
+.typeset tbody {
   /* no style */
 }
 
-.ugc tfoot {
+.typeset tfoot {
   /* no style */
 }
 
-.ugc th, .ugc td {
+.typeset th, .typeset td {
   border: 1px solid #DBE2F2;
   color: #324354;
   font-size: 90%;
@@ -276,12 +277,12 @@
   text-align: left;
 }
 
-.ugc th {
+.typeset th {
   background-color: #F3F6FA;
   font-weight: normal;
 }
 
-.ugc td {
+.typeset td {
   /* no style */
 }
 
@@ -289,18 +290,18 @@
   Media
 */
 
-.ugc embed, .ugc iframe, .ugc img, .ugc object {
+.typeset embed, .typeset iframe, .typeset img, .typeset object {
   display: inline;
   max-width: 100%;
 }
 
-.ugc figure {
+.typeset figure {
   display: block;
   max-width: 100%;
   margin: 1em 0;
 }
 
-.ugc figcaption {
+.typeset figcaption {
   font-size: 80%;
   line-height: 1.3em;
   margin: .7em 0;
@@ -311,6 +312,6 @@
   Cleanup
 */
 
-.ugc > *:first-child {
+.typeset > *:first-child {
   margin-top: 0;
 }
