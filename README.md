@@ -28,7 +28,7 @@ Typeset was originally created for user-generated content on UserVoice feedback 
 
 ### How to use this
 
-1. [Download](https://github.com/joshuarudd/typeset-css/zipball/master) and add the `typeset.css` file to your page.
+1. [Download](https://github.com/joshuarudd/typeset.css/zipball/master) and add the `typeset.css` file to your page.
 2. Add the `typeset` class name to the parent element that wraps the content you want styled with Typeset.css.
 
 Example:

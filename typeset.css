@@ -1,8 +1,8 @@
 /* 
   Typeset.css
   https://github.com/joshuarudd/typeset.css
-  v0.8
-  Last Updated: 2012-04-26
+  v0.9
+  Last Updated: 2012-04-30
   Author: Joshua Rudd - http://joshuarudd.com 
   Twitter: @joshuarudd
 */
@@ -41,6 +41,34 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.typeset li, .typeset dt, .typeset dd, .typeset p, .typeset pre, .typeset caption, .typeset th, .typeset td, .typeset figcaption {
+  line-height: 1.4em;
+}
+
+.typeset caption, .typeset dl, .typeset dd, .typeset figcaption, .typeset figure, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre, .typeset table, .typeset ol, .typeset ul {
+  margin: 1.4em 0;
+}
+
+.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
+  margin-top: 1.4em;
+}
+
+.typeset blockquote, .typeset ol, .typeset ul {
+  margin-left: 2.8em;
+}
+
+.typeset code, .typeset pre, .typeset th {
+  background-color: #F3F6FA;
+}
+
+.typeset code, .typeset pre, .typeset th, .typeset td {
+  color: #324354;
+}
+
+.typeset pre, .typeset table, .typeset th, .typeset td {
+  border: 1px solid #DBE2F2;
 }
 
 /*
@@ -123,8 +151,8 @@
 }
 
 .typeset code {
-  background-color: #F3F6FA;
-  color: #324354;
+  /* background-color set above */
+  /* color set above */
   font-family: monospace;
   padding: .1em .2em;
 }
@@ -134,12 +162,12 @@
 */
 
 .typeset ol, .typeset ul {
-  line-height: 1em;
-  margin: 1em 0 1em 2em;
+  /* margin set above */
 }
 
   .typeset ol ol, .typeset ul ul, .typeset ol ul, .typeset ul ol {
-    margin: 0 0 0 2em;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 .typeset ol {
@@ -163,21 +191,21 @@
 }
 
 .typeset li {
-  line-height: 1.3em;
+  /* line-height set above */
 }
 
 .typeset dl {
-  margin: 1em 0;
+  /* margin set above */
 }
 
 .typeset dt {
-  line-height: 1.3em;
   font-weight: bold;
+  /* line-height set above */
 }
 
 .typeset dd {
-  line-height: 1.3em;
-  margin-bottom: .7em;
+  /* line-height set above */
+  margin-top: 0;
 }
 
 /*
@@ -186,8 +214,8 @@
 
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-weight: bold;
-  line-height: 1em;
-  margin: 1.3em 0 .7em 0;
+  /* margin set above */
+  margin-bottom: 0;
 }
 .typeset h1 {
   font-size: 200%;
@@ -210,29 +238,29 @@
 }
 
 .typeset p {
-  line-height: 1.3em;
-  margin: .7em 0;
+  /* line-height set above */
+  /* margin set above */
 }
 
 .typeset blockquote {
-  margin-left: 2em;
+  /* margin-left set above */
 }
 
 .typeset pre {
-  background-color: #F3F6FA;
-  border: 1px solid #DBE2F2;
+  /* background-color set above */
+  /* border set above */
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  color: #324354;
+  /* color set above */
   display: block;
   font-family: monospace;
   font-size: 12px;
-  line-height: 1.3em;
-  margin: 1em 0;
+  /* line-height set above */
+  /* margin set above */
   max-width: 100%;
   overflow: scroll;
-  padding: 2ex;
+  padding: .7em;
   white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
   white-space: pre-wrap; /* css-3 */
 }
@@ -242,17 +270,18 @@
 */
 
 .typeset table {
-  border: 1px solid #DBE2F2;
+  /* border set above */
   border-collapse: collapse;
-  margin: 1em 0;
+  /* margin set above */
   table-layout: auto;
 }
 
 .typeset caption {
   caption-side: top;
   font-weight: bold;
-  line-height: 1.3em;
-  margin-bottom: .7em;
+  /* line-height set above */
+  /* margin set above */
+  margin-top: 0;
   text-align: left;
 }
 
@@ -269,16 +298,15 @@
 }
 
 .typeset th, .typeset td {
-  border: 1px solid #DBE2F2;
-  color: #324354;
-  font-size: 90%;
-  line-height: 1.3em;
-  padding: 1ex;
+  /* border set above */
+  /* color set above */
+  /* line-height set above */
+  padding: .7em;
   text-align: left;
 }
 
 .typeset th {
-  background-color: #F3F6FA;
+  /* background-color set above */
   font-weight: normal;
 }
 
@@ -298,13 +326,13 @@
 .typeset figure {
   display: block;
   max-width: 100%;
-  margin: 1em 0;
+  /* margin set above */
 }
 
 .typeset figcaption {
   font-size: 80%;
-  line-height: 1.3em;
-  margin: .7em 0;
+  /* line-height set above */
+  /* margin set above */
   text-align: left;
 }
 
