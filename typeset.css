@@ -51,10 +51,6 @@
   margin: 1.4em 0;
 }
 
-.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-  margin-top: 1.4em;
-}
-
 .typeset blockquote, .typeset ol, .typeset ul {
   margin-left: 2.8em;
 }
@@ -340,6 +336,6 @@
   Cleanup
 */
 
-.typeset > *:first-child {
+.typeset > :first-child {
   margin-top: 0;
 }
