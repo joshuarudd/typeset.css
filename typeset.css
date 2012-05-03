@@ -1,8 +1,8 @@
 /* 
   Typeset.css
   https://github.com/joshuarudd/typeset.css
-  v0.9
-  Last Updated: 2012-04-30
+  v0.9.1
+  Last Updated: 2012-05-03
   Author: Joshua Rudd - http://joshuarudd.com 
   Twitter: @joshuarudd
 */
@@ -49,10 +49,6 @@
 
 .typeset caption, .typeset dl, .typeset dd, .typeset figcaption, .typeset figure, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre, .typeset table, .typeset ol, .typeset ul {
   margin: 1.4em 0;
-}
-
-.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-  margin-top: 1.4em;
 }
 
 .typeset blockquote, .typeset ol, .typeset ul {
@@ -340,6 +336,6 @@
   Cleanup
 */
 
-.typeset > *:first-child {
+.typeset > :first-child {
   margin-top: 0;
 }
