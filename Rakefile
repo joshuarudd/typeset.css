@@ -8,11 +8,10 @@ task :styles do
   sh "sass --style expanded #{src} #{dest}"
 
   # Massage output
-  IO.write(dest,
-    IO.read(dest)
-      .gsub(%r{\*/\n/\*}, "*/\n\n/*")
-      .gsub(%r{(/\*\n  [A-Za-z.:; -]+\n\*/)}, "\\1\n")
-  )
+  css = IO.read(dest)
+    .gsub(%r{\*/\n/\*}, "*/\n\n/*")
+    .gsub(%r{(/\*\n  [A-Za-z.:; -]+\n\*/)}, "\\1\n")
+  File.open(dest, "w") { |f| f.write(css) }
 end
 
 # Make default task generate CSS
