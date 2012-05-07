@@ -11,331 +11,338 @@
   Reset element styles
 */
 
-.typeset body, .typeset div, .typeset span, .typeset applet, .typeset object, .typeset iframe,
-.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset blockquote, .typeset pre,
-.typeset a, .typeset abbr, .typeset acronym, .typeset address, .typeset big, .typeset cite, .typeset code,
-.typeset del, .typeset dfn, .typeset em, .typeset img, .typeset ins, .typeset kbd, .typeset q, .typeset s, .typeset samp,
-.typeset small, .typeset strike, .typeset strong, .typeset sub, .typeset sup, .typeset tt, .typeset var,
-.typeset b, .typeset u, .typeset i, .typeset center,
-.typeset dl, .typeset dt, .typeset dd, .typeset ol, .typeset ul, .typeset li,
-.typeset fieldset, .typeset form, .typeset label, .typeset legend,
-.typeset table, .typeset caption, .typeset tbody, .typeset tfoot, .typeset thead, .typeset tr, .typeset th, .typeset td,
-.typeset article, .typeset aside, .typeset canvas, .typeset details, .typeset embed, 
-.typeset figure, .typeset figcaption, .typeset footer, .typeset header, .typeset hgroup, 
-.typeset menu, .typeset nav, .typeset output, .typeset ruby, .typeset section, .typeset summary,
-.typeset time, .typeset mark, .typeset audio, .typeset video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  line-height: 1em;
-  vertical-align: baseline;
+.typeset {
+  body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    line-height: 1em;
+    vertical-align: baseline;
+  }
 }
 
 .typeset {
   line-height: 1em;
   text-rendering: optimizeLegibility;
-}
 
-.typeset * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-.typeset li, .typeset dt, .typeset dd, .typeset p, .typeset pre, .typeset caption, .typeset th, .typeset td, .typeset figcaption {
-  line-height: 1.4em;
-}
+  li, dt, dd, p, pre, caption, th, td, figcaption {
+    line-height: 1.4em;
+  }
 
-.typeset caption, .typeset dl, .typeset dd, .typeset figcaption, .typeset figure, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre, .typeset table, .typeset ol, .typeset ul {
-  margin: 1.4em 0;
-}
+  caption, dl, dd, figcaption, figure, h1, h2, h3, h4, h5, h6, p, pre, table, ol, ul {
+    margin: 1.4em 0;
+  }
 
-.typeset blockquote, .typeset ol, .typeset ul {
-  margin-left: 2.8em;
-}
+  blockquote, ol, ul {
+    margin-left: 2.8em;
+  }
 
-.typeset code, .typeset pre, .typeset th {
-  background-color: #F3F6FA;
-}
+  code, pre, th {
+    background-color: #F3F6FA;
+  }
 
-.typeset code, .typeset pre, .typeset th, .typeset td {
-  color: #324354;
-}
+  code, pre, th, td {
+    color: #324354;
+  }
 
-.typeset pre, .typeset table, .typeset th, .typeset td {
-  border: 1px solid #DBE2F2;
+  pre, table, th, td {
+    border: 1px solid #DBE2F2;
+  }
 }
 
 /*
   Inline elements
 */
 
-.typeset a {
-  text-decoration: underline;
-}
+.typeset {
+  a {
+    text-decoration: underline;
+  }
 
-.typeset strong, .typeset b {
-  font-weight: bolder;
-}
+  strong, b {
+    font-weight: bolder;
+  }
 
-.typeset u, .typeset em, .typeset i {
-  font-style: italic;
-  text-decoration: none;
-}
+  u, em, i {
+    font-style: italic;
+    text-decoration: none;
+  }
 
-.typeset abbr[title] {
-  border-bottom: 1px dotted gray;
-}
+  abbr[title] {
+    border-bottom: 1px dotted gray;
+  }
 
-.typeset address {
-  /* no style */
-}
+  address {
+    /* no style */
+  }
 
-.typeset cite {
-  font-style: italic;
-}
+  cite {
+    font-style: italic;
+  }
 
-.typeset dfn {
-  /* no style */
-}
+  dfn {
+    /* no style */
+  }
 
-.typeset del {
-  color: red;
-  text-decoration: line-through;
-}
+  del {
+    color: red;
+    text-decoration: line-through;
+  }
 
-.typeset ins {
-  color: green;
-  text-decoration: none;
-}
+  ins {
+    color: green;
+    text-decoration: none;
+  }
 
-.typeset kbd {
-  font-family: monospace;
-}
+  kbd {
+    font-family: monospace;
+  }
 
-.typeset mark {
-  background-color: yellow;
-  color: black;
-}
+  mark {
+    background-color: yellow;
+    color: black;
+  }
 
-.typeset samp {
-  font-family: monospace;
-}
+  samp {
+    font-family: monospace;
+  }
 
-.typeset small {
-  color: gray;
-  font-size: 80%;
-}
+  small {
+    color: gray;
+    font-size: 80%;
+  }
 
-.typeset s {
-  text-decoration: line-through;
-}
+  s {
+    text-decoration: line-through;
+  }
 
-.typeset sub {
-  font-size: 80%;
-  vertical-align: sub;
-}
+  sub {
+    font-size: 80%;
+    vertical-align: sub;
+  }
 
-.typeset sup {
-  font-size: 80%;
-  vertical-align: super;
-}
+  sup {
+    font-size: 80%;
+    vertical-align: super;
+  }
 
-.typeset var {
-  font-style: italic;
-}
+  var {
+    font-style: italic;
+  }
 
-.typeset code {
-  /* background-color set above */
-  /* color set above */
-  font-family: monospace;
-  padding: .1em .2em;
+  code {
+    /* background-color set above */
+    /* color set above */
+    font-family: monospace;
+    padding: .1em .2em;
+  }
 }
 
 /*
   Lists
 */
 
-.typeset ol, .typeset ul {
-  /* margin set above */
-}
-
-  .typeset ol ol, .typeset ul ul, .typeset ol ul, .typeset ul ol {
-    margin-top: 0;
-    margin-bottom: 0;
+.typeset {
+  ol, ul {
+    /* margin set above */
   }
 
-.typeset ol {
-  list-style: decimal;
-}
+    ol ol, ul ul, ol ul, ul ol {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-  .typeset ol ol {
-    list-style: lower-alpha;
+  ol {
+    list-style: decimal;
   }
-  
-    .typeset ol ol ol {
-      list-style: lower-roman;
+
+    ol ol {
+      list-style: lower-alpha;
     }
     
-      .typeset ol ol ol ol {
-        list-style: decimal;
+      ol ol ol {
+        list-style: lower-roman;
       }
+      
+        ol ol ol ol {
+          list-style: decimal;
+        }
 
-.typeset ul {
-  list-style: square;
-}
+  ul {
+    list-style: square;
+  }
 
-.typeset li {
-  /* line-height set above */
-}
+  li {
+    /* line-height set above */
+  }
 
-.typeset dl {
-  /* margin set above */
-}
+  dl {
+    /* margin set above */
+  }
 
-.typeset dt {
-  font-weight: bold;
-  /* line-height set above */
-}
+  dt {
+    font-weight: bold;
+    /* line-height set above */
+  }
 
-.typeset dd {
-  /* line-height set above */
-  margin-top: 0;
+  dd {
+    /* line-height set above */
+    margin-top: 0;
+  }
 }
 
 /*
   Block-level elements
 */
 
-.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-  font-weight: bold;
-  /* margin set above */
-  margin-bottom: 0;
-}
-.typeset h1 {
-  font-size: 200%;
-}
-.typeset h2 {
-  font-size: 160%;
-}
-.typeset h3 {
-  font-size: 120%;
-}
-.typeset h4 {
-  font-size: 100%;
-}
-.typeset h5 {
-  font-size: 80%;
-}
-.typeset h6 {
-  font-size: 80%;
-  font-weight: normal;
-}
+.typeset {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    /* margin set above */
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 160%;
+  }
+  h3 {
+    font-size: 120%;
+  }
+  h4 {
+    font-size: 100%;
+  }
+  h5 {
+    font-size: 80%;
+  }
+  h6 {
+    font-size: 80%;
+    font-weight: normal;
+  }
 
-.typeset p {
-  /* line-height set above */
-  /* margin set above */
-}
+  p {
+    /* line-height set above */
+    /* margin set above */
+  }
 
-.typeset blockquote {
-  /* margin-left set above */
-}
+  blockquote {
+    /* margin-left set above */
+  }
 
-.typeset pre {
-  /* background-color set above */
-  /* border set above */
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  /* color set above */
-  display: block;
-  font-family: monospace;
-  font-size: 12px;
-  /* line-height set above */
-  /* margin set above */
-  max-width: 100%;
-  overflow: scroll;
-  padding: .7em;
-  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
-  white-space: pre-wrap; /* css-3 */
+  pre {
+    /* background-color set above */
+    /* border set above */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    /* color set above */
+    display: block;
+    font-family: monospace;
+    font-size: 12px;
+    /* line-height set above */
+    /* margin set above */
+    max-width: 100%;
+    overflow: scroll;
+    padding: .7em;
+    white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+    white-space: pre-wrap; /* css-3 */
+  }
 }
 
 /*
   Tables
 */
 
-.typeset table {
-  /* border set above */
-  border-collapse: collapse;
-  /* margin set above */
-  table-layout: auto;
-}
+.typeset {
+  table {
+    /* border set above */
+    border-collapse: collapse;
+    /* margin set above */
+    table-layout: auto;
+  }
 
-.typeset caption {
-  caption-side: top;
-  font-weight: bold;
-  /* line-height set above */
-  /* margin set above */
-  margin-top: 0;
-  text-align: left;
-}
+  caption {
+    caption-side: top;
+    font-weight: bold;
+    /* line-height set above */
+    /* margin set above */
+    margin-top: 0;
+    text-align: left;
+  }
 
-.typeset thead {
-  /* no style */
-}
+  thead {
+    /* no style */
+  }
 
-.typeset tbody {
-  /* no style */
-}
+  tbody {
+    /* no style */
+  }
 
-.typeset tfoot {
-  /* no style */
-}
+  tfoot {
+    /* no style */
+  }
 
-.typeset th, .typeset td {
-  /* border set above */
-  /* color set above */
-  /* line-height set above */
-  padding: .7em;
-  text-align: left;
-}
+  th, td {
+    /* border set above */
+    /* color set above */
+    /* line-height set above */
+    padding: .7em;
+    text-align: left;
+  }
 
-.typeset th {
-  /* background-color set above */
-  font-weight: normal;
-}
+  th {
+    /* background-color set above */
+    font-weight: normal;
+  }
 
-.typeset td {
-  /* no style */
+  td {
+    /* no style */
+  }
 }
 
 /*
   Media
 */
 
-.typeset embed, .typeset iframe, .typeset img, .typeset object {
-  display: inline;
-  max-width: 100%;
-}
+.typeset {
+  embed, iframe, img, object {
+    display: inline;
+    max-width: 100%;
+  }
 
-.typeset figure {
-  display: block;
-  max-width: 100%;
-  /* margin set above */
-}
+  figure {
+    display: block;
+    max-width: 100%;
+    /* margin set above */
+  }
 
-.typeset figcaption {
-  font-size: 80%;
-  /* line-height set above */
-  /* margin set above */
-  text-align: left;
+  figcaption {
+    font-size: 80%;
+    /* line-height set above */
+    /* margin set above */
+    text-align: left;
+  }
 }
 
 /*
   Cleanup
 */
 
-.typeset > :first-child {
-  margin-top: 0;
+.typeset {
+  > :first-child {
+    margin-top: 0;
+  }
 }
