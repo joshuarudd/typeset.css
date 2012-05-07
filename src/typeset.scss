@@ -1,0 +1,341 @@
+/* 
+  Typeset.css
+  https://github.com/joshuarudd/typeset.css
+  v0.9.1
+  Last Updated: 2012-05-03
+  Author: Joshua Rudd - http://joshuarudd.com 
+  Twitter: @joshuarudd
+*/
+
+/*
+  Reset element styles
+*/
+
+.typeset body, .typeset div, .typeset span, .typeset applet, .typeset object, .typeset iframe,
+.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset blockquote, .typeset pre,
+.typeset a, .typeset abbr, .typeset acronym, .typeset address, .typeset big, .typeset cite, .typeset code,
+.typeset del, .typeset dfn, .typeset em, .typeset img, .typeset ins, .typeset kbd, .typeset q, .typeset s, .typeset samp,
+.typeset small, .typeset strike, .typeset strong, .typeset sub, .typeset sup, .typeset tt, .typeset var,
+.typeset b, .typeset u, .typeset i, .typeset center,
+.typeset dl, .typeset dt, .typeset dd, .typeset ol, .typeset ul, .typeset li,
+.typeset fieldset, .typeset form, .typeset label, .typeset legend,
+.typeset table, .typeset caption, .typeset tbody, .typeset tfoot, .typeset thead, .typeset tr, .typeset th, .typeset td,
+.typeset article, .typeset aside, .typeset canvas, .typeset details, .typeset embed, 
+.typeset figure, .typeset figcaption, .typeset footer, .typeset header, .typeset hgroup, 
+.typeset menu, .typeset nav, .typeset output, .typeset ruby, .typeset section, .typeset summary,
+.typeset time, .typeset mark, .typeset audio, .typeset video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  line-height: 1em;
+  vertical-align: baseline;
+}
+
+.typeset {
+  line-height: 1em;
+  text-rendering: optimizeLegibility;
+}
+
+.typeset * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.typeset li, .typeset dt, .typeset dd, .typeset p, .typeset pre, .typeset caption, .typeset th, .typeset td, .typeset figcaption {
+  line-height: 1.4em;
+}
+
+.typeset caption, .typeset dl, .typeset dd, .typeset figcaption, .typeset figure, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre, .typeset table, .typeset ol, .typeset ul {
+  margin: 1.4em 0;
+}
+
+.typeset blockquote, .typeset ol, .typeset ul {
+  margin-left: 2.8em;
+}
+
+.typeset code, .typeset pre, .typeset th {
+  background-color: #F3F6FA;
+}
+
+.typeset code, .typeset pre, .typeset th, .typeset td {
+  color: #324354;
+}
+
+.typeset pre, .typeset table, .typeset th, .typeset td {
+  border: 1px solid #DBE2F2;
+}
+
+/*
+  Inline elements
+*/
+
+.typeset a {
+  text-decoration: underline;
+}
+
+.typeset strong, .typeset b {
+  font-weight: bolder;
+}
+
+.typeset u, .typeset em, .typeset i {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.typeset abbr[title] {
+  border-bottom: 1px dotted gray;
+}
+
+.typeset address {
+  /* no style */
+}
+
+.typeset cite {
+  font-style: italic;
+}
+
+.typeset dfn {
+  /* no style */
+}
+
+.typeset del {
+  color: red;
+  text-decoration: line-through;
+}
+
+.typeset ins {
+  color: green;
+  text-decoration: none;
+}
+
+.typeset kbd {
+  font-family: monospace;
+}
+
+.typeset mark {
+  background-color: yellow;
+  color: black;
+}
+
+.typeset samp {
+  font-family: monospace;
+}
+
+.typeset small {
+  color: gray;
+  font-size: 80%;
+}
+
+.typeset s {
+  text-decoration: line-through;
+}
+
+.typeset sub {
+  font-size: 80%;
+  vertical-align: sub;
+}
+
+.typeset sup {
+  font-size: 80%;
+  vertical-align: super;
+}
+
+.typeset var {
+  font-style: italic;
+}
+
+.typeset code {
+  /* background-color set above */
+  /* color set above */
+  font-family: monospace;
+  padding: .1em .2em;
+}
+
+/*
+  Lists
+*/
+
+.typeset ol, .typeset ul {
+  /* margin set above */
+}
+
+  .typeset ol ol, .typeset ul ul, .typeset ol ul, .typeset ul ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+.typeset ol {
+  list-style: decimal;
+}
+
+  .typeset ol ol {
+    list-style: lower-alpha;
+  }
+  
+    .typeset ol ol ol {
+      list-style: lower-roman;
+    }
+    
+      .typeset ol ol ol ol {
+        list-style: decimal;
+      }
+
+.typeset ul {
+  list-style: square;
+}
+
+.typeset li {
+  /* line-height set above */
+}
+
+.typeset dl {
+  /* margin set above */
+}
+
+.typeset dt {
+  font-weight: bold;
+  /* line-height set above */
+}
+
+.typeset dd {
+  /* line-height set above */
+  margin-top: 0;
+}
+
+/*
+  Block-level elements
+*/
+
+.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
+  font-weight: bold;
+  /* margin set above */
+  margin-bottom: 0;
+}
+.typeset h1 {
+  font-size: 200%;
+}
+.typeset h2 {
+  font-size: 160%;
+}
+.typeset h3 {
+  font-size: 120%;
+}
+.typeset h4 {
+  font-size: 100%;
+}
+.typeset h5 {
+  font-size: 80%;
+}
+.typeset h6 {
+  font-size: 80%;
+  font-weight: normal;
+}
+
+.typeset p {
+  /* line-height set above */
+  /* margin set above */
+}
+
+.typeset blockquote {
+  /* margin-left set above */
+}
+
+.typeset pre {
+  /* background-color set above */
+  /* border set above */
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  /* color set above */
+  display: block;
+  font-family: monospace;
+  font-size: 12px;
+  /* line-height set above */
+  /* margin set above */
+  max-width: 100%;
+  overflow: scroll;
+  padding: .7em;
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: pre-wrap; /* css-3 */
+}
+
+/*
+  Tables
+*/
+
+.typeset table {
+  /* border set above */
+  border-collapse: collapse;
+  /* margin set above */
+  table-layout: auto;
+}
+
+.typeset caption {
+  caption-side: top;
+  font-weight: bold;
+  /* line-height set above */
+  /* margin set above */
+  margin-top: 0;
+  text-align: left;
+}
+
+.typeset thead {
+  /* no style */
+}
+
+.typeset tbody {
+  /* no style */
+}
+
+.typeset tfoot {
+  /* no style */
+}
+
+.typeset th, .typeset td {
+  /* border set above */
+  /* color set above */
+  /* line-height set above */
+  padding: .7em;
+  text-align: left;
+}
+
+.typeset th {
+  /* background-color set above */
+  font-weight: normal;
+}
+
+.typeset td {
+  /* no style */
+}
+
+/*
+  Media
+*/
+
+.typeset embed, .typeset iframe, .typeset img, .typeset object {
+  display: inline;
+  max-width: 100%;
+}
+
+.typeset figure {
+  display: block;
+  max-width: 100%;
+  /* margin set above */
+}
+
+.typeset figcaption {
+  font-size: 80%;
+  /* line-height set above */
+  /* margin set above */
+  text-align: left;
+}
+
+/*
+  Cleanup
+*/
+
+.typeset > :first-child {
+  margin-top: 0;
+}
