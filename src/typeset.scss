@@ -7,68 +7,90 @@
   Twitter: @joshuarudd
 */
 
-/*
-  Reset element styles
-*/
+//
+// Variables
+//
 
-.typeset {
-  body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
-  menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
+// Line Height
+$typeset-line-height: 1.4em !default;
+
+// Include a typographical reset
+$typeset-reset: true !default;
+
+// Underline links. Set to `false` to turn off.
+$typeset-link-decoration: underline !default;
+
+// Adjust the margin of the first child element?
+$typeset-adjust-first-margin: true !default;
+
+
+@if ($typeset-reset) {
+  /*
+    Reset element styles
+  */
+
+  .typeset {
+    body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      line-height: 1em;
+      vertical-align: baseline;
+    }
+  }
+
+  .typeset {
     line-height: 1em;
-    vertical-align: baseline;
-  }
-}
+    text-rendering: optimizeLegibility;
 
-.typeset {
-  line-height: 1em;
-  text-rendering: optimizeLegibility;
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
 
-  * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    li, dt, dd, p, pre, caption, th, td, figcaption {
+      line-height: $typeset-line-height;
+    }
+
+    caption, dl, dd, figcaption, figure, h1, h2, h3, h4, h5, h6, p, pre, table, ol, ul {
+      margin: $typeset-line-height 0;
+    }
+
+    blockquote, ol, ul {
+      margin-left: 2.8em;
+    }
+
+    code, pre, th {
+      background-color: #F3F6FA;
+    }
+
+    code, pre, th, td {
+      color: #324354;
+    }
+
+    pre, table, th, td {
+      border: 1px solid #DBE2F2;
+    }
   }
 
-  li, dt, dd, p, pre, caption, th, td, figcaption {
-    line-height: 1.4em;
-  }
-
-  caption, dl, dd, figcaption, figure, h1, h2, h3, h4, h5, h6, p, pre, table, ol, ul {
-    margin: 1.4em 0;
-  }
-
-  blockquote, ol, ul {
-    margin-left: 2.8em;
-  }
-
-  code, pre, th {
-    background-color: #F3F6FA;
-  }
-
-  code, pre, th, td {
-    color: #324354;
-  }
-
-  pre, table, th, td {
-    border: 1px solid #DBE2F2;
-  }
-}
+} // typeset-reset
 
 /*
   Inline elements
 */
 
 .typeset {
-  a {
-    text-decoration: underline;
+  @if ($typeset-link-decoration) {
+    a {
+      text-decoration: $typeset-link-decoration;
+    }
   }
 
   strong, b {
@@ -341,8 +363,10 @@
   Cleanup
 */
 
-.typeset {
-  > :first-child {
-    margin-top: 0;
+@if ($typeset-adjust-first-margin) {
+  .typeset {
+    > :first-child {
+      margin-top: 0;
+    }
   }
 }
