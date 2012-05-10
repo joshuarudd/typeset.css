@@ -28,12 +28,12 @@
   padding: 0;
   border: 0;
   font: inherit;
-  line-height: 1em;
+  line-height: 1.0;
   vertical-align: baseline;
 }
 
 .typeset {
-  line-height: 1em;
+  line-height: 1.0;
   text-rendering: optimizeLegibility;
 }
 
@@ -49,7 +49,7 @@
 */
 
 .typeset li, .typeset dt, .typeset dd, .typeset p, .typeset pre, .typeset caption, .typeset th, .typeset td, .typeset figcaption {
-  line-height: 1.4em;
+  line-height: 1.4;
 }
 
 .typeset caption, .typeset dl, .typeset dd, .typeset figcaption, .typeset figure, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre, .typeset table, .typeset ol, .typeset ul {
