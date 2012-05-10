@@ -37,11 +37,16 @@
   text-rendering: optimizeLegibility;
 }
 
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
 .typeset * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/*
+  Initialize line-heights, margins, and a few colors
+*/
 
 .typeset li, .typeset dt, .typeset dd, .typeset p, .typeset pre, .typeset caption, .typeset th, .typeset td, .typeset figcaption {
   line-height: 1.4em;
@@ -336,6 +341,7 @@
   Cleanup
 */
 
+/* Remove top-margin from first element in typeset block so that it can align with other parts of the page */
 .typeset > :first-child {
   margin-top: 0;
 }
