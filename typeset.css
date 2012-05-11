@@ -1,34 +1,29 @@
 /* 
   Typeset.css
   https://github.com/joshuarudd/typeset.css
-  v0.9.1
-  Last Updated: 2012-05-03
+  v0.9.2
+  Last Updated: 2012-05-10
   Author: Joshua Rudd - http://joshuarudd.com 
   Twitter: @joshuarudd
 */
 
 /*
-  Reset element styles
+  First, let’s reset some styles inside of .typeset to avoid unwanted inheritance
+  Adapted from Eric Meyer’s CSS Reset: http://meyerweb.com/eric/tools/css/reset/
 */
 
-.typeset html, .typeset body, .typeset div, .typeset span, .typeset applet, .typeset object, .typeset iframe,
-.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset blockquote, .typeset pre,
-.typeset a, .typeset abbr, .typeset acronym, .typeset address, .typeset big, .typeset cite, .typeset code,
-.typeset del, .typeset dfn, .typeset em, .typeset img, .typeset ins, .typeset kbd, .typeset q, .typeset s, .typeset samp,
-.typeset small, .typeset strike, .typeset strong, .typeset sub, .typeset sup, .typeset tt, .typeset var,
-.typeset b, .typeset u, .typeset i, .typeset center,
-.typeset dl, .typeset dt, .typeset dd, .typeset ol, .typeset ul, .typeset li,
-.typeset fieldset, .typeset form, .typeset label, .typeset legend,
+.typeset a, .typeset abbr, .typeset acronym, .typeset address, .typeset b, .typeset big, .typeset cite, .typeset code, .typeset del, .typeset em, .typeset i, .typeset ins, .typeset kbd, .typeset mark, .typeset output, .typeset q, .typeset ruby, .typeset s, .typeset samp, .typeset small, .typeset strike, .typeset strong, .typeset sub, .typeset sup, .typeset time, .typeset tt, .typeset u, .typeset var,
+.typeset dfn, .typeset dl, .typeset dt, .typeset dd, .typeset ol, .typeset ul, .typeset li,
+.typeset blockquote, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre,
 .typeset table, .typeset caption, .typeset tbody, .typeset tfoot, .typeset thead, .typeset tr, .typeset th, .typeset td,
-.typeset article, .typeset aside, .typeset canvas, .typeset details, .typeset embed, 
-.typeset figure, .typeset figcaption, .typeset footer, .typeset header, .typeset hgroup, 
-.typeset menu, .typeset nav, .typeset output, .typeset ruby, .typeset section, .typeset summary,
-.typeset time, .typeset mark, .typeset audio, .typeset video {
-  margin: 0;
-  padding: 0;
+.typeset applet, .typeset canvas, .typeset embed, .typeset figure, .typeset figcaption, .typeset iframe, .typeset img, .typeset object {
+  background: transparent;
   border: 0;
+  font-size: 100%;
   font: inherit;
   line-height: 1.0;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline;
 }
 
@@ -101,6 +96,13 @@
   font-style: italic;
 }
 
+.typeset code {
+  /* background-color set above */
+  /* color set above */
+  font-family: monospace;
+  padding: .1em .2em;
+}
+
 .typeset dfn {
   /* no style */
 }
@@ -149,13 +151,6 @@
 
 .typeset var {
   font-style: italic;
-}
-
-.typeset code {
-  /* background-color set above */
-  /* color set above */
-  font-family: monospace;
-  padding: .1em .2em;
 }
 
 /*
