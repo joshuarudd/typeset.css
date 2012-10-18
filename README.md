@@ -1,14 +1,14 @@
 # Typeset.css
 
-A baseline set of styles for content.
+A no-nonsense CSS typography reset for styling user-generated content like blog posts, comments, and forum content.
 
 ### What this is
 
-Typeset.css is a CSS file (`typeset.css`) that includes all the styles you need to ensure content on your site is styled. Styles are only applied to areas that have a parent element with the class `typeset`, so it can be limited to content-specific markup.
+Typeset.css is a CSS file (`typeset.css`) that includes all the styles you need to ensure content on your site is styled. Styles are only applied to areas that have a parent element with the class `typeset`, so it can be target content-specific markup.
 
 ### And what this is *not*
 
-This is *not* a CSS framework for styling the layout and design of your website - just blocks of content (paragraphs, lists, code snippets, and so on).
+Typeset.css is *not* a CSS framework for styling the layout and design of your website - just specific blocks of content (e.g., blog posts, comments, forum content) that includes paragraphs, lists, code snippets, and so on.
 
 ### When to use this
 
@@ -29,7 +29,7 @@ Typeset was originally created for user-generated content on UserVoice feedback 
 ### How to use this
 
 1. [Download](https://github.com/joshuarudd/typeset.css/zipball/master) and add the `typeset.css` file to your page.
-2. Add the `typeset` class name to the parent element that wraps the content you want styled with Typeset.css.
+2. Add the `typeset` class to the parent element that wraps the content you want styled with Typeset.css.
 
 Example:
 
