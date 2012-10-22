@@ -274,7 +274,7 @@
   Media
 */
 
-.typeset embed, .typeset iframe, .typeset img, .typeset object {
+.typeset applet, .typeset embed, .typeset iframe, .typeset img, .typeset object {
   display: inline;
   max-width: 100%;
 }

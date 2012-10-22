@@ -361,7 +361,7 @@ $typeset-adjust-first-margin: true !default;
 
 .typeset {
 
-  embed, iframe, img, object {
+  applet, embed, iframe, img, object {
     display: inline;
     max-width: 100%;
   }
