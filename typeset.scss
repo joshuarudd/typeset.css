@@ -1,8 +1,8 @@
 /* 
   Typeset.css
   https://github.com/joshuarudd/typeset.css
-  v0.9.3
-  Last Updated: 2012-05-14
+  v0.9.4
+  Last updated: 2013-01-18
   Author: Joshua Rudd - http://joshuarudd.com 
   Twitter: @joshuarudd
 */
@@ -41,7 +41,7 @@ $typeset-adjust-first-margin: true !default;
     box-sizing: border-box;
   }
 
-  /* Adapted from Eric Meyer’s CSS Reset: http://meyerweb.com/eric/tools/css/reset/ */
+  /* Adapted from Eric Meyer's CSS Reset: http://meyerweb.com/eric/tools/css/reset/ */
   .typeset {
     a, abbr, acronym, address, b, big, cite, code, del, em, i, ins, kbd, mark, output, q, ruby, s, samp, small, strike, strong, sub, sup, time, tt, u, var,
     dfn, dl, dt, dd, ol, ul, li,
@@ -70,7 +70,7 @@ $typeset-adjust-first-margin: true !default;
     line-height: $typeset-line-height;
   }
 
-  caption, dl, dd, figcaption, figure, h1, h2, h3, h4, h5, h6, p, pre, table, ol, ul {
+  caption, dl, dd, div, figcaption, figure, h1, h2, h3, h4, h5, h6, p, pre, table, ol, ul {
     margin: $typeset-line-height+em 0;
   }
 

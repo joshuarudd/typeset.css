@@ -1,8 +1,8 @@
 /* 
   Typeset.css
   https://github.com/joshuarudd/typeset.css
-  v0.9.3
-  Last Updated: 2012-05-14
+  v0.9.4
+  Last updated: 2013-01-18
   Author: Joshua Rudd - http://joshuarudd.com 
   Twitter: @joshuarudd
 */
@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-/* Adapted from Eric Meyer’s CSS Reset: http://meyerweb.com/eric/tools/css/reset/ */
+/* Adapted from Eric Meyer's CSS Reset: http://meyerweb.com/eric/tools/css/reset/ */
 .typeset a, .typeset abbr, .typeset acronym, .typeset address, .typeset b, .typeset big, .typeset cite, .typeset code, .typeset del, .typeset em, .typeset i, .typeset ins, .typeset kbd, .typeset mark, .typeset output, .typeset q, .typeset ruby, .typeset s, .typeset samp, .typeset small, .typeset strike, .typeset strong, .typeset sub, .typeset sup, .typeset time, .typeset tt, .typeset u, .typeset var,
 .typeset dfn, .typeset dl, .typeset dt, .typeset dd, .typeset ol, .typeset ul, .typeset li,
 .typeset blockquote, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre,
@@ -46,7 +46,7 @@
 .typeset li, .typeset dt, .typeset dd, .typeset p, .typeset pre, .typeset caption, .typeset th, .typeset td, .typeset figcaption {
   line-height: 1.4;
 }
-.typeset caption, .typeset dl, .typeset dd, .typeset figcaption, .typeset figure, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre, .typeset table, .typeset ol, .typeset ul {
+.typeset caption, .typeset dl, .typeset dd, .typeset div, .typeset figcaption, .typeset figure, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6, .typeset p, .typeset pre, .typeset table, .typeset ol, .typeset ul {
   margin: 1.4em 0;
 }
 .typeset blockquote, .typeset ol, .typeset ul {
@@ -59,7 +59,7 @@
   color: #324354;
 }
 .typeset pre, .typeset table, .typeset th, .typeset td {
-  border: 1px solid #DBE2F2;
+  border: 1px solid #dbe2f2;
 }
 
 /*
@@ -89,7 +89,7 @@
   /* background-color set above */
   /* color set above */
   font-family: monospace;
-  padding: .1em .2em;
+  padding: 0.1em 0.2em;
 }
 .typeset dfn {
   /* no style */
