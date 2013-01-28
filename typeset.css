@@ -72,7 +72,12 @@
 .typeset strong, .typeset b {
   font-weight: bolder;
 }
-.typeset u, .typeset em, .typeset i {
+.typeset u {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.typeset em, .typeset i {
   font-style: italic;
   text-decoration: none;
 }
