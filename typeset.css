@@ -1,31 +1,25 @@
 /*
   Typeset.css
   https://github.com/joshuarudd/typeset.css
-  v0.9.5
-  Last updated: 2019-04-10
+  v2.0b
+  Last updated: 2019-04-27
   Author: Joshua Rudd - https://joshuarudd.com
   Twitter: @joshuarudd
 */
 
-/*
-  Color variables
-*/
-
-:root {
-  --typeset-background-color: #F3F6FA;
-  --typeset-border-color: #DBE2F2;
-  --typeset-color: #324354;
-  --typeset-blockquote-color: rgba(0,0,0,.2);
+.typeset {
+  --background-color: #F3F6FA;
+  --border-color: #DBE2F2;
+  --color: #324354;
+  --blockquote-color: rgba(0,0,0,.2);
+  --mark-color: rgba(0, 140, 255, 0.1);
+  line-height: 1.0;
+  text-rendering: optimizeLegibility;
 }
 
 /*
   Reset .typeset element styles to avoid unwanted inheritance
 */
-
-.typeset {
-  line-height: 1.0;
-  text-rendering: optimizeLegibility;
-}
 
 /* Adapted from http://paulirish.com/2012/box-sizing-border-box-ftw/ */
 .typeset * {
@@ -72,13 +66,13 @@
   margin-left: 2.5em;
 }
 .typeset code, .typeset pre, .typeset th {
-  background-color: var(--typeset-background-color);
+  background-color: var(--background-color);
 }
 .typeset code, .typeset pre, .typeset th, .typeset td {
-  color: var(--typeset-color);
+  color: var(--color);
 }
 .typeset pre, .typeset table, .typeset th, .typeset td {
-  border: 1px solid var(--typeset-border-color);
+  border: 1px solid var(--border-color);
 }
 
 /*
@@ -125,7 +119,7 @@
   font-family: monospace;
 }
 .typeset mark {
-  background-color: yellow;
+  background-color: var(--mark-color);
   color: black;
 }
 .typeset samp {
@@ -133,7 +127,7 @@
 }
 .typeset small {
   color: gray;
-  font-size: 80%;
+  font-size: .75em;
 }
 .typeset s {
   text-decoration: line-through;
@@ -143,7 +137,7 @@
   vertical-align: sub;
 }
 .typeset sup {
-  font-size: 80%;
+  font-size: .75em;
   vertical-align: super;
 }
 .typeset var {
@@ -234,7 +228,7 @@
   /* margin set above */
 }
 .typeset blockquote {
-  border-left: .2em solid var(--typeset-blockquote-color);
+  border-left: .2em solid var(--blockquote-color);
   margin-left: .2em;
   opacity: .8;
   padding-left: .8em;
@@ -321,5 +315,5 @@
 
 /* Remove top-margin from first element in typeset block so that it can align with other parts of the page */
 .typeset > :first-child {
-  margin-top: 0;
+  /* margin-top: 0; */
 }
