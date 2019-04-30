@@ -66,13 +66,16 @@
   margin-left: 2.5em;
 }
 .typeset code, .typeset pre, .typeset th {
+  background-color: #F3F6FA;
   background-color: var(--background-color);
 }
 .typeset code, .typeset pre, .typeset th, .typeset td {
+  color: #324354;
   color: var(--color);
 }
 .typeset pre, .typeset table, .typeset th, .typeset td {
-  border: 1px solid var(--border-color);
+  border: 1px solid #DBE2F2;
+  border-color: var(--border-color);
 }
 
 /*
@@ -119,6 +122,7 @@
   font-family: monospace;
 }
 .typeset mark {
+  background-color: rgba(0, 140, 255, 0.1);
   background-color: var(--mark-color);
   color: black;
 }
@@ -228,10 +232,16 @@
   /* margin set above */
 }
 .typeset blockquote {
-  border-left: .2em solid var(--blockquote-color);
+  border-left: .2em solid rgba(0,0,0,.2);
+  border-left-color: var(--blockquote-color);
   margin-left: .2em;
   opacity: .8;
   padding-left: .8em;
+}
+.typeset-wysiwyg blockquote {
+  border-left: none;
+  margin-left: 3em;
+  opacity: 1;
 }
 .typeset pre {
   /* background-color set above */
@@ -307,13 +317,4 @@
   line-height: 2;
   /* margin set above */
   text-align: left;
-}
-
-/*
-  Cleanup
-*/
-
-/* Remove top-margin from first element in typeset block so that it can align with other parts of the page */
-.typeset > :first-child {
-  /* margin-top: 0; */
 }
